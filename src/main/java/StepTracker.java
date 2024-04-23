@@ -18,6 +18,8 @@ public class StepTracker
   return validDays;
  }
  public double averageSteps(){
+  if(totalDays == 0)
+    return 0.0;
   return (double)totalSteps/totalDays;
  }
 } 
